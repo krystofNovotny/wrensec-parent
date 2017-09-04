@@ -170,6 +170,9 @@
         <!-- maven-checkstyle-plugin -->
         <checkstyleConfigLocation>config/sun_checks.xml</checkstyleConfigLocation>
         <!--checkstyleConfigLocation>${project.basedir}/src/checkstyle/checkstyle.xml</checkstyleConfigLocation-->
+        
+        <!-- pgpverify-maven-plugin -->
+        <pgpVerifyPluginVersion>1.1.0</pgpVerifyPluginVersion>
 
         <!-- ***************** -->
         <!-- Repository Deployment URLs -->
@@ -387,7 +390,7 @@
                 <plugin>
                     <groupId>com.github.s4u.plugins</groupId>
                     <artifactId>pgpverify-maven-plugin</artifactId>
-                    <version>1.1.0</version>
+                    <version>${pgpVerifyPluginVersion}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
