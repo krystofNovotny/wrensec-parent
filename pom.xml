@@ -190,6 +190,9 @@
         <!-- cobertura-maven-plugin http://mojo.codehaus.org/cobertura-maven-plugin -->
         <coberturaPluginVersion>2.7</coberturaPluginVersion>
 
+        <!-- pgpverify-maven-plugin -->
+        <pgpVerifyPluginVersion>1.1.0</pgpVerifyPluginVersion>
+
         <!-- ***************** -->
         <!-- Repository Deployment URLs -->
         <!-- ***************** -->
@@ -566,7 +569,7 @@
                 <plugin>
                     <groupId>com.github.s4u.plugins</groupId>
                     <artifactId>pgpverify-maven-plugin</artifactId>
-                    <version>1.1.0</version>
+                    <version>${pgpVerifyPluginVersion}</version>
                 </plugin>
                 <plugin>
                     <!-- Check Open Source licenses for all the dependencies -->
