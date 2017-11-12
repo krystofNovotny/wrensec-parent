@@ -172,7 +172,7 @@
         <!--checkstyleConfigLocation>${project.basedir}/src/checkstyle/checkstyle.xml</checkstyleConfigLocation-->
         
         <!-- pgpverify-maven-plugin -->
-        <pgpVerifyPluginVersion>1.1.0</pgpVerifyPluginVersion>
+        <pgpVerifyPluginVersion>1.2.0-wren1</pgpVerifyPluginVersion>
 
         <!-- ***************** -->
         <!-- Repository Deployment URLs -->
@@ -669,6 +669,7 @@
                         <configuration>
                             <failNoSignature>true</failNoSignature>
                             <keysMapLocation>http://wrensecurity.org/trustedkeys.properties</keysMapLocation>
+                            <verifySnapshots>true</verifySnapshots>
                         </configuration>
                         <executions>
                             <execution>
@@ -683,11 +684,9 @@
             </build>
         </profile>
     </profiles>
+
     <dependencyManagement>
         <dependencies>
-            <!-- Ensure that the version specified for tools.jar matches the
-                 JDK version to retrieve the right GPG signature from the repo.
-              -->
             <dependency>
                 <groupId>com.sun</groupId>
                 <artifactId>tools</artifactId>
